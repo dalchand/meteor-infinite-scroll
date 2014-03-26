@@ -1,0 +1,17 @@
+<head>
+  <title>test-infinite-scroll</title>
+</head>
+
+<body>
+  {{> container}}
+</body>
+
+<template name="container">
+	<div class="content">
+		{{#each photos}}
+		<div class="thumbWrap">
+			<div class="thumb" style="background-image: url('{{url}}');"></div>
+		</div>
+		{{/each}}
+	</div>
+</template>
